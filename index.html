@@ -95,6 +95,46 @@
       font-size: 22px;
     }
 
+    .hero-overview {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 1040px;
+      margin-top: 34px;
+    }
+
+    .hero-metric {
+      min-height: 112px;
+      padding: 18px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.14);
+    }
+
+    .hero-metric strong {
+      display: block;
+      color: #fff;
+      font-size: 34px;
+      line-height: 1;
+    }
+
+    .hero-metric span {
+      display: block;
+      margin-top: 10px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .hero-summary {
+      max-width: 1040px;
+      margin-top: 14px;
+      color: rgba(255, 255, 255, 0.74);
+      font-size: 15px;
+    }
+
     .lead {
       max-width: 920px;
       font-size: 22px;
@@ -564,6 +604,14 @@
         font-size: 40px;
       }
 
+      .hero-overview {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .hero-metric strong {
+        font-size: 28px;
+      }
+
       .grid.two,
       .grid.three,
       .grid.four,
@@ -631,6 +679,10 @@
     }
 
     @media (max-width: 640px) {
+      .hero-overview {
+        grid-template-columns: 1fr;
+      }
+
       .value-strip {
         grid-template-columns: 1fr;
       }
@@ -644,6 +696,29 @@
         <p class="eyebrow">平台组 2026 下半年整体规划</p>
         <h1>围绕设备接入、体验与运维，建设可复用的平台能力</h1>
         <p style="margin-top:24px;">下半年聚焦接入解耦、配网成功率提升与卡点治理、体验一致、场景底座和运维监控闭环，支撑产品上市节奏和多产品线复用。</p>
+        <div class="hero-overview" aria-label="规划概览">
+          <div class="hero-metric">
+            <strong>5</strong>
+            <span>大核心重点</span>
+          </div>
+          <div class="hero-metric">
+            <strong>49</strong>
+            <span>项规划事项</span>
+          </div>
+          <div class="hero-metric">
+            <strong>30</strong>
+            <span>项 Q3 打基础</span>
+          </div>
+          <div class="hero-metric">
+            <strong>16</strong>
+            <span>项 Q4 做深化</span>
+          </div>
+          <div class="hero-metric">
+            <strong>16</strong>
+            <span>项必上交付</span>
+          </div>
+        </div>
+        <p class="hero-summary">配网主线另设 3 项专项闭环：步骤数据看板、成功率稳定目标、新设备接入配置 SOP。</p>
       </div>
     </section>
 
