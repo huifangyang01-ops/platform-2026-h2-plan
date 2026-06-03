@@ -398,8 +398,7 @@
       border-bottom: 1px solid var(--tone-border, #c9d8ff);
     }
 
-    .capability-roadmap .roadmap-cell:nth-child(16),
-    .capability-roadmap .roadmap-cell:nth-child(17) {
+    .capability-roadmap .roadmap-cell:nth-last-child(-n + 2) {
       border-bottom: 0;
     }
 
@@ -496,6 +495,10 @@
 
     .roadmap-item.row-3 {
       grid-row: 3;
+    }
+
+    .roadmap-item.row-4 {
+      grid-row: 4;
     }
 
     .roadmap-empty {
@@ -1222,16 +1225,6 @@
               <div class="roadmap-cell roadmap-axis">Q4</div>
 
               <div class="roadmap-cell roadmap-row-heading">
-                <strong>设备配网（1 项）</strong>
-              </div>
-              <div class="roadmap-cell"><span class="roadmap-empty">-</span></div>
-              <div class="roadmap-cell roadmap-items">
-                <span class="roadmap-item">原子化配网（BLE）</span>
-              </div>
-              <div class="roadmap-cell"><span class="roadmap-empty">-</span></div>
-              <div class="roadmap-cell"><span class="roadmap-empty">-</span></div>
-
-              <div class="roadmap-cell roadmap-row-heading">
                 <strong>设备基础功能（3 项）</strong>
               </div>
               <div class="roadmap-cell roadmap-items">
@@ -1245,13 +1238,14 @@
               </div>
 
               <div class="roadmap-cell roadmap-row-heading">
-                <strong>平台功能（4 项）</strong>
+                <strong>平台能力（5 项）</strong>
               </div>
               <div class="roadmap-cell roadmap-span-row">
                 <span class="roadmap-item month-7 row-1">设备助手云端动态配置</span>
                 <span class="roadmap-item span-7-8 row-2">产品管理灰度能力</span>
                 <span class="roadmap-item month-8 row-1">环境同步</span>
                 <span class="roadmap-item span-8-9 row-3">官方模式支持新版节律配置</span>
+                <span class="roadmap-item month-8 row-4">BLE配网协议标准化</span>
               </div>
             </div>
           </div>
